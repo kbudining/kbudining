@@ -1,0 +1,111 @@
+<!-- Start Content Place Holder -->
+<div class="row">
+    <!-- Start Page header -->
+    <div class="row">
+        <div class="col s12">
+            <h5>All Sales</h5>
+        </div>
+    </div>
+    <!-- End Page header -->
+
+    <div class="row">
+        <!-- Start Add Category Form -->
+        <div class="col s12" id="">
+
+            <form class="col s12 white z-depth-1" action="" method="post">
+                <h5>Select Date:</h5>
+                <div class="input-field col s12 m4">
+                    <input id="start-date" class="datepicker validate" type="text" name="" value="">
+                    <label for="start-date">From:</label>
+                </div>
+                <div class="input-field col s12 m4">
+                    <input id="end-date" class="datepicker validate" type="text" name="" value="">
+                    <label for="end-date">To:</label>
+                </div>
+                <div class="input-field col s12 m4">
+                    <input type="submit" class="btn green col s12" id="get-sales" value="Get Sales">
+                </div>
+            <br>
+        </form>
+        <br>
+
+        <div class="col s12 left-pad right-pad bottom-pad white z-depth-1" id="datable">
+            <table class="col s12 responsive-table bordered center">
+                <thead>
+                    <th>Orders</th>
+                    <th>Delivery</th>
+                    <th>Take In</th>
+                    <th>Take Away</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="total-orders"></td>
+                        <td id="delivery-orders"></td>
+                        <td id="take-in-orders"></td>
+                        <td id="take-away-orders"></td>
+                    </tr>
+                    <tr>
+                        <td id="total-cash"></td>
+                        <td id="delivery-cash"></td>
+                        <td id="take-in-cash"></td>
+                        <td id="take-away-cash"></td>
+                    </tr>
+                </tbody>
+                <br>
+            </table>
+        </div>
+    </div>
+    <!-- End Add Category Form -->
+
+</div>
+
+</div>
+
+<!-- Start Sales Table -->
+<div class="row">
+    <div class="switch col s12 white z-depth-1 left-pad right-pad">
+        <!-- Header for sales -->
+        <br>
+        <h5 class="center">All Meals</h5>
+        <hr>
+
+        <!-- Start Sales Table -->
+        <table id="all-sales" class="striped bordered responsive-table highlight editable">
+            <thead>
+                <tr>
+                    <th data-field="name">Served By</th>
+                    <th data-field="type">Type</th>
+                    <th data-field="locator">Locator</th>
+                    <th data-field="items">Items</th>
+                    <th data-field="cost">Cost</th>
+                    <th data-field="paid">Paid</th>
+                    <th data-field="change">Change</th>
+                    <th data-field="status">Status</th>
+                    <th data-field="actions">Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!-- End Sales Table -->
+    </div>
+</div>
+<!-- End Sales Table -->
+<script type="text/javascript">
+$( document ).on( 'load', 'select', function () {
+    $( this ).material_select();
+});
+$( document ).ready( function () {
+    setTimeout( function () {
+        $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 3 // Creates a dropdown of 15 years to control year
+      });
+  }, 500 );
+})
+</script>

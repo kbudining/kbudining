@@ -1,0 +1,85 @@
+<!-- Start Content Place Holder -->
+<div class="row">
+    <!-- Start Page header -->
+    <div class="row">
+        <div class="col s12">
+            <h5>Categories</h5>
+        </div>
+    </div>
+    <!-- End Page header -->
+
+    <div class="row">
+        <!-- Start Add Category Form -->
+        <div class="container" id="">
+
+            <form class="col s12 white z-depth-1" action="" method="post">
+                <h5>Create Category</h5>
+                <div class="input-field col s12 m4">
+                    <input placeholder="Enter Category name" id="category_name" type="text" class="validate center">
+                    <label for="category_name">Name:</label>
+                </div>
+                <div class="input-field col s12 m4">
+                    <select id="assigned_to" class="" name="">
+                        <option value="">Assign category</option>
+                        <option value="Drinks">Drinks</option>
+                        <option value="Meals">Meals</option>
+                        <option value="Pastries">Pastries</option>
+                    </select>
+                    <!-- <label for="">for:</label> -->
+                </div>
+                <div class="input-field col s12 m4">
+                    <button id="add_category" class="btn waves-effect waves-light" type="submit">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+        <!-- End Add Category Form -->
+    </div>
+
+</div>
+
+<!-- Start Sales Table -->
+<div class="row">
+    <div class="container white z-depth-1 left-pad right-pad">
+        <!-- Header for sales -->
+        <br>
+        <h5 class="center">All Categories</h5>
+        <hr>
+        <!-- filter form -->
+        <form class="col s12" action="" method="post">
+            <div class="input-field col s6 m3">
+                <select class="" name="" id="filter_category">
+                    <option value="all">filter by assigned to</option>
+                    <option value="Drinks">Drinks</option>
+                    <option value="Meals">Meals</option>
+                    <option value="Pastries">Pastries</option>
+                </select>
+            </div>
+        </form>
+        <!--  -->
+
+        <!-- Start Sales Table -->
+        <table id="all_categories" class="editable striped bordered responsive-table highlight">
+            <thead>
+                <tr class="center">
+                    <th data-field="name">Name</th>
+                    <th data-field="assigned_to">Assigned to</th>
+                    <th data-field="addedOn">Added on</th>
+                    <th data-field="addedBy">Added By</th>
+                    <th data-field="actions">Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="category_row">
+                <tr>
+                    <td colspan="5"><h6 class="center">loading...</h6></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!-- End Sales Table -->
+    </div>
+</div>
+<!-- End Sales Table -->

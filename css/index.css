@@ -1,0 +1,55 @@
+.thumbs{
+    min-height: 500px
+}
+
+.item-name{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.items-name{
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.items-card{
+    height: 120px;
+}
+
+.item-count{
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.item-cost{
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.item-unit{
+    font-size: 0.8em
+}
+
+.left-pad{
+    padding-left: 20px
+}
+
+.right-pad{
+    padding-right: 20px
+}
+
+.bottom-pad{
+    padding-right: 20px
+}
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+.text-align-right{
+    text-align: right;
+}

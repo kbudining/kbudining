@@ -1,0 +1,98 @@
+<!-- Start Content Place Holder -->
+<div class="row">
+    <!-- Start Page header -->
+    <div class="row">
+        <div class="col s12">
+            <h5>Drinks</h5>
+        </div>
+    </div>
+    <!-- End Page header -->
+
+    <div class="row">
+        <!-- Start Add Category Form -->
+        <div class="container" id="">
+
+            <form class="col s12 white z-depth-1" action="" method="post">
+                <h5>Add Drink</h5>
+                <div class="input-field col s12 m6">
+                    <select class="" name="" id="drink_category">
+                        <option value="">Select category</option>
+                    </select>
+                    <label for="drink_category">Category:</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input placeholder="Enter Drink Name" id="drink_name" type="text" class="validate center">
+                    <label for="drink_name">Name:</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <select id="drink_type" class="" name="">
+                        <option value="">Select Type:</option>
+                        <option value="Drinks">Drinks</option>
+                        <optgroup label="Meals">
+                            <option value="Bronze">Bronze</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Gold">Gold</option>
+                            <option value="Custom">Custom</option>
+                        </optgroup>
+                    </select>
+                    <label for="">Type:</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <input placeholder="Enter Price" id="drink_price" type="text" class="validate center">
+                    <label for="drink_price">Price:</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <input placeholder="Enter Quantity" id="drink_quantity" type="number" class="validate center">
+                    <label for="drink_quantity">Quantity:</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <button id="add_drink" type="submit" name="button" class="btn">
+                        Add
+                        <i class="material-icons right">add</i>
+                    </button>
+                    <br>
+                </div>
+
+            </form>
+        </div>
+        <!-- End Add Category Form -->
+    </div>
+
+</div>
+
+<!-- Start Sales Table -->
+<div class="row">
+    <div class="container white z-depth-1 left-pad right-pad">
+        <!-- Header for sales -->
+        <br>
+        <h5 class="center">All Drinks</h5>
+        <hr>
+
+        <!-- Start Sales Table -->
+        <table id="drinks_table" class="striped bordered responsive-table highlight editable">
+            <thead>
+                <tr>
+                    <th data-field="name">Name</th>
+                    <th data-field="price">Price</th>
+                    <th data-field="quantity">Quantity</th>
+                    <th data-field="addedOn">Added On</th>
+                    <th data-field="addedBy">Added By</th>
+                    <th data-field="lastupdated">last Updated</th>
+                    <th data-field="actions">Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="7"><h6 class="center">Loading...</h6></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!-- End Sales Table -->
+    </div>
+</div>
+<!-- End Sales Table -->
